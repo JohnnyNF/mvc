@@ -86,7 +86,7 @@ CREATE TABLE `users` (
   `email` varchar(100) NOT NULL,
   `password` varchar(200) NOT NULL,
   `name` varchar(100) NOT NULL,
-  `birtdate` date NOT NULL,
+  `birthdate` date NOT NULL,
   `city` varchar(100) DEFAULT NULL,
   `work` varchar(100) DEFAULT NULL,
   `avatar` varchar(100) NOT NULL DEFAULT 'default.jpg',

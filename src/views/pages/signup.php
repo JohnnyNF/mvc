@@ -17,7 +17,7 @@
             <?php if(!empty($flash)): ?>
                 <?php echo $flash; ?>
             <?php endif; ?>
-            <input placeholder="Digite seu Nome Completo" class="input" type="text" name="text" />
+            <input placeholder="Digite seu Nome Completo" class="input" type="text" name="name" />
 
             <input placeholder="Digite seu E-mail" class="input" type="email" name="email" />
 
