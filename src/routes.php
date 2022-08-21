@@ -10,3 +10,7 @@ $router->post('/login', 'LoginController@signinAction');
 
 $router->get('/cadastro', 'LoginController@signup');
 $router->post('/cadastro', 'LoginController@signupAction');
+
+//router->get('/pesquisa');
+//router->get('/perfil');
+//router=>get('/sair');

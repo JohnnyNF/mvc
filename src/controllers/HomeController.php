@@ -10,16 +10,18 @@ class HomeController extends Controller {
 
     public function __construct(){
         $this->loggedUser = LoginHandler::checkLogin();
-        if($this->loggedUser === false){
+        
+        if($this->loggedUser === false) {
             $this->redirect('/login');
         }
-     
-       
     }
     
-    public function index() {
-       // $this->loggerUser->name;
-        $this->render('home', ['nome' => 'Bonieky']);
+      
+public function index(){
+    $this->render(
+              'home',
+              ['loggedUser' =>$this->loggedUser ] //faltou a associação com a variavel
+);
     }
 
 

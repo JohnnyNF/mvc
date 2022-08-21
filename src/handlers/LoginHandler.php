@@ -16,11 +16,10 @@ class LoginHandler {
 
                 $loggerUser = new User();
                 $loggerUser->id = $data['id'];
-                $loggerUser->email = $data['email'];
                 $loggerUser->name = $data['name'];
+                $loggerUser->avatar = $data['avatar'];
                
                 return $loggerUser;
-
             } 
 
         } 
@@ -63,7 +62,7 @@ class LoginHandler {
             'email' => $email,
             'password' => $hash,
             'name' => $name,
-            'birtdate' => $birthdate,
+            'birthdate' => $birthdate,
             'token' => $token
         ])->execute();
         
